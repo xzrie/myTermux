@@ -9,8 +9,8 @@ YELLOW="\e[93m"
 GREEN="\e[92m"
 DEFAULT="\e[39m"
 
-user="xshin"
-pass="xshin"
+user="xzrie"
+pass="xzrie"
 
 handle_ctrl_c() {
 
@@ -65,7 +65,7 @@ while true; do
   #      read -s -r password
 
   #      if [[ "$password" == "$pass" ]]; then
-           
+
   #          echo -e ""
   #          echo -e "\nStatus:$GREEN Success Login.$DEFAULT"
   #          sleep 2s
