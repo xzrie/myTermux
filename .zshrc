@@ -10,7 +10,7 @@ LINK="https://github.com/xshin404"
 export LINK
 
 # Enable 256color
-export TERM=xterm-256color 
+export TERM=xterm-256color
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -114,7 +114,7 @@ source $ZSH/oh-my-zsh.sh
     alias chcolor="/data/data/com.termux/files/home/.termux/colors.sh"
     alias chfont="/data/data/com.termux/files/home/.termux/fonts.sh"
 
-    #System    
+    #System
     alias q="exit"
     alias c="clear"
     alias sd="cd /sdcard"
@@ -128,7 +128,7 @@ source $ZSH/oh-my-zsh.sh
     #Convert Video
     alias convi="ffmpeg -i $1 -c:v libx264 -crf 25 $2"
 
-    #Ping    
+    #Ping
     alias pg="ping google.com"
 
     #MyIP (Local) Pre
@@ -138,7 +138,7 @@ source $ZSH/oh-my-zsh.sh
     alias myipvpn="~/.scripts/ip.sh vpn"
     alias myipall="~/.scripts/ip.sh all"
 
-    #Music    
+    #Music
     alias n="ncmpcpp"
     alias mkill="mpd --kill"
     alias m="music"
@@ -199,21 +199,21 @@ source $ZSH/oh-my-zsh.sh
     alias mpdconf="nvim ~/.config/mpd/mpd.conf"
     alias mpconf="nvim /data/data/com.termux/files/usr/etc/mpd.conf"
 
-    #ncmpcpp    
+    #ncmpcpp
     alias ncmconf="nvim ~/.config/ncmpcpp/config"
 
     #neovim
-    alias nviminit="nvim ~/.config/nvim/init.vim"
-    alias nvimplug="nvim ~/.config/nvim/settings/plugins.vim"
-    alias nvimconf="nvim ~/.config/nvim/settings/sets.vim"
-    alias nvimtheme="nvim ~/.config/nvim/settings/themes.vim"
-    alias nvimkey="nvim ~/.config/nvim/settings/keybinds.vim"
-    alias nvimset="nvim ~/.config/nvim/settings/sets.vim"
+    alias nvimimit="nvim ~/.config/nvim/init.lua"
+    alias nvimtheme="nvim ~/.config/nvim/lua/chadrc.lua"
+    alias nvimplug="nvim ~/.config/nvim/lua/pluginList.lua"
+    alias nvimmap="nvim ~/.config/nvim/lua/mappings.lua"
+    alias nvimpacnit="nvim ~/.config/nvim/lua/packerInit.lua"
+    alias nvimhighlight="nvim ~/.config/nvim/lua/hightlights.lua"
 
     #zsh
     alias zshconf="nvim ~/.zshrc"
 
-    #neofetch    
+    #neofetch
     alias neoconf="nvim ~/.config/neofetch/config.conf"
     alias rxconf="nvim ~/.local/bin/rxfetch"
     alias neoscript="nvim ~/.config/neofetch/script.sh"
@@ -261,7 +261,7 @@ source $HOME/.lfvar
     #cursor bar or bold pipe
     #echo -e "\e[2 q"
 
-    #cursor underline    
+    #cursor underline
     echo -e "\e[4 q"
 
     #cursor pipe
@@ -276,7 +276,7 @@ source $HOME/.lfvar
 #    fi
 
 #    if [ ! -f ~/.scripts/pid/login ]; then
-        
+
        bash ~/.scripts/login.sh
 
 #    fi
