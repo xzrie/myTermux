@@ -7,25 +7,26 @@ COLOR_WARNING="\e[93m"
 COLOR_SUCCESS="\e[92m"
 COLOR_SKY="\e[34m"
 
-VERSION="0.5.0 ${COLOR_WARNING}dev${COLOR_BASED}"
+VERSION="0.5.0"
 BUILD_DATE="01 August 2021"
 AUTHOR="xShin"
 
 DEPENDENCY_PACKAGES=(
-  bat cava curl clang exa git imagemagick
-  inotify-tools lf mpd mpc ncmpcpp neovim
-  neofetch openssh termux-api tmux zsh
+  bat curl clang exa git imagemagick
+  inotify-tools lf mpd mpc neovim
+  neofetch termux-api tmux zsh
 )
 
 DOTFILES=(
   .local .config .termux .color-toys .scripts
-  .zshrc .tmux.conf .lfvar
+  .zshrc .tmux.conf .autostart .aliases
 )
 
 BACKUP_DOTFILES=(
+  .autostart .aliases
   .local .config .termux 
   .color-toys .scripts .zshrc
-  .lfvar .tmux.conf .oh-my-zsh
+  .tmux.conf .oh-my-zsh
 )
 
 REPOSITORY_LINKS=(
@@ -65,10 +66,4 @@ ZSH_CUSTOM_THEMES=(
   la-round.zsh-theme
   rounded-custom.zsh-theme
   rounded.zsh-theme
-)
-
-FINISHINGS=(
-  .zshrc
-  .lfvar
-  .tmux.conf
 )

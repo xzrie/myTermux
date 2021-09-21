@@ -1,14 +1,14 @@
-# Author : xShin
-# GitHub : https://github.com/xshin404
-
-# Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+ZSH_THEME="rounded-custom"
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting bgnotify)
 
 PATH="$PREFIX/bin:$HOME/.local/bin:$PATH"
 export PATH
+
 LINK="https://github.com/xshin404"
 export LINK
 
+<<<<<<< HEAD
 # Enable 256color
 export TERM=xterm-256color
 
@@ -59,27 +59,15 @@ ZSH_THEME="rounded-custom"
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
+=======
+LINK_SSH="git@github.com:xshin404"
+export LINK_SSH
+>>>>>>> 7a5bf3d1b9a2cbd39cebd1609b79fa34606c4278
 
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting bgnotify)
+export TERM=xterm-256color 
 
 source $ZSH/oh-my-zsh.sh
+<<<<<<< HEAD
 
 # User configuration
 
@@ -283,3 +271,8 @@ source $HOME/.lfvar
 
 #    neo
      rxfetch
+=======
+source $HOME/.config/lf/icons
+source $HOME/.aliases
+source $HOME/.autostart
+>>>>>>> 7a5bf3d1b9a2cbd39cebd1609b79fa34606c4278

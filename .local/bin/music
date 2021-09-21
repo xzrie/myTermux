@@ -1,16 +1,21 @@
 #!/usr/bin/env bash
 
-if $(mpd --kill); then
+function play() {
 
-  echo -e "Kill pid mpd previous..."
-  echo -e "Starting music..."
-  mpd
-  ncmpcpp
+  if $(mpd --kill); then
 
-else
+    echo -e "Kill pid mpd previous..."
+    echo -e "Starting music..."
+    mpd
+    ncmpcpp
 
-  echo -e "Starting music..."
-  mpd
-  ncmpcpp
+  else
 
-fi
+    echo -e "Starting music..."
+    mpd
+    ncmpcpp
+
+  fi
+}
+
+play
